@@ -156,6 +156,16 @@ header {
       color: #292929; }
       .pets-block .list-button .last-page:hover {
         background: #F1CDB3; }
+    .pets-block .list-button .previous-page {
+      border: 2px solid #F1CDB3;
+      color: #292929; }
+      .pets-block .list-button .previous-page:hover {
+        background: #F1CDB3; }
+    .pets-block .list-button .first-page {
+      border: 2px solid #F1CDB3;
+      color: #292929; }
+      .pets-block .list-button .first-page:hover {
+        background: #F1CDB3; }
 
 .modal-box .overlay {
   visibility: hidden;
@@ -325,6 +335,11 @@ header {
     height: 79.4375em;
     display: flex;
     justify-content: center; }
+
+  .modal-box .modal-list .modal {
+    display: flex;
+    flex-direction: column;
+    width: 46.875em; }
 
   .footer-main {
     flex-direction: column;

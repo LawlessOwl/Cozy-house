@@ -33,6 +33,18 @@ document.addEventListener("DOMContentLoaded", () => {
                     enabled(previousButton)
                     enabled(firstPage)
                 }
+            } else if (windowSize <= 768 && windowSize >= 619) {
+                offset += -438.32
+                count++
+                currentPage.textContent = count + 1
+                slider.style.top = offset + "px"
+                console.log(count)
+                if (count > 0) {
+                    disabled(nextPage)
+                    disabled(lastPage)
+                    enabled(previousButton)
+                    enabled(firstPage)
+                } 
             } else if (windowSize > 580) {
                 offset += -438.32
                 count++
@@ -58,6 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 enabled(firstPage)
                 disabled(nextPage)
                 disabled(lastPage)
+            } else if (windowSize <= 768 && windowSize >= 619) {
+                offset += -438,72
+                count = 0
+                currentPage.textContent = count + 1
+                slider.style.top = offset + "px"
+                enabled(previousButton)
+                enabled(firstPage)
+                disabled(nextPage)
+                disabled(lastPage)  
             } else if (windowSize > 580) {
                 offset += -2191.6
                 count = 5
@@ -83,6 +104,18 @@ document.addEventListener("DOMContentLoaded", () => {
                     enabled(nextPage)
                     enabled(lastPage)
                 }
+            } else if (windowSize <= 768 && windowSize >= 619) {
+                offset += 438.32
+                count--
+                currentPage.textContent = count + 1
+                slider.style.top = offset + "px"
+                if (count < 1) {
+                    disabled(previousButton)
+                    disabled(firstPage)
+                    enabled(nextPage)
+                    enabled(lastPage)
+                    currentPage.textContent = count + 1
+                }
             } else if (windowSize > 580) {
                 offset += 438.32
                 count--
@@ -104,6 +137,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 count = 0
                 currentPage.textContent = count + 1
                 slider.style.left = offset + "px"
+                enabled(nextPage)
+                enabled(lastPage)
+                disabled(previousButton)
+                disabled(firstPage)
+            } else if (windowSize <= 768 && windowSize >= 619) {
+                offset += 438,72
+                count = 0
+                currentPage.textContent = count + 1
+                slider.style.top = offset + "px"
                 enabled(nextPage)
                 enabled(lastPage)
                 disabled(previousButton)

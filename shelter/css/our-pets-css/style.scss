@@ -186,6 +186,20 @@ header {
                 background: #F1CDB3;
             }
         }
+        .previous-page {
+            border: 2px solid #F1CDB3;
+            color: #292929;
+            &:hover {
+                background: #F1CDB3;
+            }
+        }
+        .first-page {
+            border: 2px solid #F1CDB3;
+            color: #292929;
+            &:hover {
+                background: #F1CDB3;
+            }
+        }
     }
 }
 .modal-box {
@@ -391,6 +405,16 @@ header {
             height: 79.4375em;
             display: flex;
             justify-content: center;
+        }
+    }
+
+    .modal-box {
+        .modal-list {
+            .modal {
+                display: flex;
+                flex-direction: column;
+                width: 46.875em;
+            }
         }
     }
 
