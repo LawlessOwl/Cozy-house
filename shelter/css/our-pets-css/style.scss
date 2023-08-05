@@ -424,7 +424,7 @@ header {
     }
     [for=sandvich] {
         display: block;
-        z-index: 1;
+        z-index: 1000;
         margin-right: 30px;
         .border-menu {
             border: 2px solid #000000;
@@ -448,7 +448,7 @@ header {
     .sandvich-menu:checked + label + nav {
         display: block;
         position: absolute;
-        z-index: 0;
+        z-index: 999;
         top: 0;
         right: 0;
         width: 100%;
