@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Cozy House</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./media/favicon//site.webmanifest">
+</head>
+<body class="main-body">
+    <div class="start-background">
+        <header>
+            <a class="Header-title">
+                <h1 class="Shelter-name">Cozy House</h1>
+                <p class="Сonception-title">Shelter for pets in Boston</p>
+            </a>
+            <input type="checkbox" name="sandvich" id="sandvich" class="sandvich-menu">
+            <label for="sandvich" class="label-sandvich">
+                <div class="border-menu-box">
+                    <p class="border-menu"></p>
+                    <p class="border-menu"></p>
+                    <p class="border-menu"></p>
+                </div>
+            </label>
+            <nav class="Navigation-menu">
+                <a href="" class="Link-performance">About the shelter</a>
+                <a href="our-pets.html"class="Link-pets">Our pets</a>
+                <a href="#help-box"class="Link-help">Help the shelter</a>
+                <a href="#contacts"class="Link-contacts">Contacts</a>
+            </nav>
+        </header>
+        <div class="start-screen">
+                <div class="top-background">
+                    <h2 class="slogan-title">Not only people </br> need a house</h2>
+                    <p class="introducing-paragraph">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                    <div class="link-button">
+                        <a href="#our-pets" class="friend-button">Make a friend</a>
+                    </div>
+                </div>
+            <img src="./media/img/start-screen-puppy.png" alt="puppy image" class="puppy-img">
+        </div>
+    </div>
+    <div id="about-pets" class="shelter-block">
+        <img src="./media/img/about-pets.png" alt="pets image" class="pets-image">
+        <div class="title-shelter-block">
+            <h3 class="shelter-title">About the shelter <br/> “Cozy House”</h3>
+            <P class="statistics-paragraph">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</P>
+            <p class="volunteers-paragraph">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+        </div>
+    </div>
+    <div class="our-pets-block" id="our-pets">
+        <h3 class="our-pets-title">Our friends who <br/> are looking for a house</h3>
+        <div class="slider-box">
+            <button class="left-arrow-button"></button>
+            <div class="slider-body">
+                <ul class="pets-list">
+                    <li class="pet Katrine">
+                        <img src="./media/img/pets-katrine.png" alt="katrine photo" class="slider-photo">
+                        <p class="pet-name">Katrine</p>
+                        <button class="about-pet" data-pet="Katrine">Learn more</button>
+                    </li>
+                    <li class="pet Jennifer">
+                        <img src="./media/img/pets-jennifer.png" alt="jennifer photo" class="slider-photo">
+                        <p class="pet-name">Jennifer</p>
+                        <button class="about-pet" data-pet="Jennifer">Learn more</button>
+                    </li>
+                    <li class="pet Woody">
+                        <img src="./media/img/pets-woody.png" alt="woody photo" class="slider-photo">
+                        <p class="pet-name">Woody</p>
+                        <button class="about-pet" data-pet="Woody">Learn more</button>
+                    </li>
+                    <li class="pet Sophia">
+                        <img src="./media/img/pets-sophia.png" alt="sophia photo">
+                        <p class="pet-name">Sophia</p>
+                        <button class="about-pet" data-pet="Sophia">Learn more</button>
+                    </li>
+                    <li class="pet Timmy">
+                        <img src="./media/img/pets-timmy.png" alt="timmy photo">
+                        <p class="pet-name">Timmy</p>
+                        <button class="about-pet" data-pet="Timmy">Learn more</button>
+                    </li>
+                    <li class="pet Charly">
+                        <img src="./media/img/pets-charly.png" alt="charly photo">
+                        <p class="pet-name">Charly</p>
+                        <button class="about-pet" data-pet="Charly">Learn more</button>
+                    </li>
+                    <li class="pet Scarlett">
+                        <img src="./media/img/pets-scarlet.png" alt="scarlett photo">
+                        <p class="pet-name">Scarlett</p>
+                        <button class="about-pet" data-pet="Scarlett">Learn more</button>
+                    </li>
+                    <li class="pet Freddie">
+                        <img src="./media/img/pets-freddie.png" alt="freddie photo">
+                        <p class="pet-name">Freddie</p>
+                        <button class="about-pet" data-pet="Freddie">Learn more</button>
+                    </li>
+                </ul>
+            </div>
+            <button class="right-arrow-button"></button>
+        </div>
+        <div class="pets-block-nav-button">
+            <button class="left-arrow-button"></button>
+            <button class="right-arrow-button"></button>
+        </div>
+        <a href="our-pets.html" class="full-list-link">Get to know the rest</a>
+    </div>
+    <div class="modal-box">
+        <ul class="modal-list">
+            <li class="modal" data-pet="Katrine" >
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-katrine.png" alt="katrine-photo" class="pet-photo">
+                <div class="pet-info">
+                    <p class="modal-pet-name">Katrine</p>
+                    <p class="pet-breed">Cat - British Shorthair</p>
+                    <p class="pet-discription">Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 6 months</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: panleukopenia</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: none</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: none</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="modal" data-pet="Jennifer">
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-jennifer.png" alt="jennifer-photo" class="pet-photo">
+                <div>
+                    <p class="modal-pet-name">Jennifer</p>
+                    <p class="pet-breed">Dog - Labrador</p>
+                    <p class="pet-discription">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 2 months</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: none</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: none</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: none</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="modal" data-pet="Woody">
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-woody.png" alt="woody-photo" class="pet-photo">
+                <div>
+                    <p class="modal-pet-name">Woody</p>
+                    <p class="pet-breed">Dog - Golden Retriever</p>
+                    <p class="pet-discription">Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 3 years 6 months</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: adenovirus, distemper</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: right back leg mobility reduced</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: none</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="modal" data-pet="Sophia">
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-sophia.png" alt="sophia-photo" class="pet-photo">
+                <div>
+                    <p class="modal-pet-name">Sophia</p>
+                    <p class="pet-breed">Dog - Shih tzu</p>
+                    <p class="pet-discription">Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 1 month</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: parvovirus</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: none</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: none</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="modal" data-pet="Timmy">
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-timmy.png" alt="timmy-photo" class="pet-photo">
+                <div>
+                    <p class="modal-pet-name">Timmy</p>
+                    <p class="pet-breed">Cat - British Shorthair</p>
+                    <p class="pet-discription">Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 2 years 3 months</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: calicivirus, viral rhinotracheitis</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: kidney stones</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: none</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="modal" data-pet="Charly">
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-charly.png" alt="charly-photo" class="pet-photo">
+                <div>
+                    <p class="modal-pet-name">Charly</p>
+                    <p class="pet-breed">Dog - Jack Russell Terrier</p>
+                    <p class="pet-discription">This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 8 years</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: bordetella bronchiseptica, leptospirosis</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: deafness, blindness</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: lice, fleas</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="modal" data-pet="Scarlett">
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-scarlet.png" alt="scarlet-photo" class="pet-photo">
+                <div>
+                    <p class="modal-pet-name">Scarlett</p>
+                    <p class="pet-breed">Dog - Jack Russell Terrier</p>
+                    <p class="pet-discription">Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 3 months</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: parainfluenza</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: none</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: none</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="modal" data-pet="Freddie">
+                <div class="close-button">×</div>
+                <img src="./media/img/pets-freddie.png" alt="freddie-photo" class="pet-photo">
+                <div>
+                    <p class="modal-pet-name">Freddie</p>
+                    <p class="pet-breed">Cat - British Shorthair</p>
+                    <p class="pet-discription">Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.</p>
+                    <ul>
+                        <li>
+                            <p class="pet-age">Age: 2 months</p>
+                        </li>
+                        <li>
+                            <p class="pet-inoculations">Inoculations: rabies</p>
+                        </li>
+                        <li>
+                            <p class="pet-desiases">Desiases: none</p>
+                        </li>
+                        <li>
+                            <p class="pet-parasites">Parasites: none</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="overlay"></div>
+    </div>
+    <div class="help-box" id="help-box">
+        <h3 class="help-title">How you can help </br> our shelter</h3>
+        <div class="help-menu">
+            <div class="help-item">
+                <img src="./media/img/icon-pet-food.svg" alt="food icon">
+                <p>Pet food</p>
+            </div>
+            <div class="help-item">
+                <img src="./media/img/icon-transportation.svg" alt="transportation icon">
+                <p>Transportation</p>
+            </div>
+            <div class="help-item">
+                <img src="./media/img/icon-toys.svg" alt="toys icon">
+                <p>Toys</p>
+            </div>
+            <div class="break-adap">breaker</div>
+            <div class="help-item">
+                <img src="./media/img/icon-bowls-and-cups.svg" alt="bowls icon">
+                <p>Bowls and cups</p>
+            </div>
+            <div class="help-item">
+                <img src="./media/img/icon-shampoos.svg" alt="shampoos icon">
+                <p>Shampoos</p>
+            </div>
+            <div class="break">breaker</div>
+            <div class="help-item">
+                <img src="./media/img/icon-vitamins.svg" alt="vitamins icon">
+                <p>Vitamins</p>
+            </div>
+            <div class="break-adap">breaker</div>
+            <div class="help-item">
+                <img src="./media/img/icon-medicines.svg" alt="medicines icon">
+                <p>Medicines</p>
+            </div>
+            <div class="help-item">
+                <img src="./media/img/icon-collars-leashes.svg" alt="leashes icon">
+                <p>Collars / leashes</p>
+            </div>
+            <div class="help-item">
+                <img src="./media/img/icon-sleeping-area.svg" alt="sleep icon">
+                <p>Sleeping areas</p>
+            </div>
+        </div>
+    </div>
+    <div class="donation-main">
+        <img src="./media/img/donation-dog.png" alt="dog image" class="dog-image">
+        <div class="donation-box">
+            <h3 class="donation-title">You can also </br> make a donation</h3>
+            <h5 class="bank-info">Name of the bank / Type of bank account</h5>
+            <a class="credit-card-box">
+                <img src="./media/img/credit-card.svg" alt="credit card icon">
+                <h4 class="credit-card-info">8380 2880 8028 8791 7435</h4>
+            </a>
+            <p class="donation-paragraph">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main" id="contacts">
+           <div class="footer-info">
+                <div class="contacts-box">
+                    <h3 class="contacts-title">For questions </br> and suggestions</h3>
+                    <a href="mailto:email@shelter.com" class="mail-box">
+                        <img src="./media/img/icon-email.svg" alt="email icon">
+                        <h4 class="mail-adres">email@shelter.com</h4>
+                    </a>
+                    <a href="tel:+136745677554" class="phone-box">
+                        <img src="./media/img/icon-phone.svg" alt="phone icon">
+                        <h4 class="phone-number">+13 674 567 75 54</h4>
+                    </a>
+                </div>
+                <div class="location-box">
+                    <h3 class="location-title">We are waiting </br> for your visit</h3>
+                    <a href="https://goo.gl/maps/z16sWL3r8MYCXLEE9" target="_blank" class="boston-location">
+                        <img src="./media/img/icon-marker.svg" alt="marker icon">
+                        <h4 class="boston-adres">1 Central Street, Boston </br> (entrance from the store)</h4>
+                    </a>
+                    <a href="https://goo.gl/maps/H3c65rt2DVXqVnGQ9" target="_blank" class="london-location">
+                        <img src="./media/img/icon-marker.svg" alt="marker icon">
+                        <h4 class="london-adres">18 South Park, London </h4>
+                    </a>
+                </div>
+            </div> 
+            <img src="./media/img/footer-puppy.png" alt="puppy image" class="puppy-footer">
+        </div>
+    </footer>
+    <script src="./js/grade.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/pets-modal.js"></script>
+</body>
+</html>
