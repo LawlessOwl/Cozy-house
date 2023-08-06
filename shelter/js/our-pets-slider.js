@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     if (windowSize <= 768) {
-        nextPage.removeAttribute('disabled')
-        lastPage.removeAttribute('disabled')
+        enabled(nextPage)
+        enabled(lastPage)
         nextPage.addEventListener('click', function() {
             if (windowSize <= 580) {
                 offset += -270
