@@ -189,22 +189,99 @@ header {
     background-color: white;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     border-radius: 10px;
-    width: 800px;
-    height: 400px;
+    width: 900px;
+    height: 500px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    word-break: break-all;
+    hyphens: auto;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     align-items: center;
     transition: .3s ease-in-out; }
     .modal-box .modal-list .modal .pet-photo {
-      width: 220px;
-      height: 220px; }
-    .modal-box .modal-list .modal .modal-pet-name {
-      font-family: Georgia;
-      font-size: 30px; }
+      width: 500px;
+      height: 500px;
+      margin-right: 48px; }
+    .modal-box .modal-list .modal .pets-info {
+      display: flex;
+      justify-content: center;
+      width: 351px;
+      height: 362px;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 20px; }
+      .modal-box .modal-list .modal .pets-info .modal-pet-name {
+        font-family: Georgia;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 2.1px; }
+      .modal-box .modal-list .modal .pets-info .pet-breed {
+        font-family: Georgia;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%;
+        letter-spacing: 1.2px; }
+      .modal-box .modal-list .modal .pets-info .pet-discription {
+        font-family: Georgia;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item {
+        list-style-type: disc;
+        color: #F1CDB3;
+        margin-left: 15px; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-age {
+          font-family: Georgia;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 110%;
+          letter-spacing: 0.9px;
+          color: #000; }
+          .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-age span {
+            font-weight: 400;
+            color: #000; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-inoculations {
+          font-family: Georgia;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 110%;
+          letter-spacing: 0.9px;
+          color: #000; }
+          .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-inoculations span {
+            font-weight: 400;
+            color: #000; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-desiases {
+          font-family: Georgia;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 110%;
+          letter-spacing: 0.9px;
+          color: #000; }
+          .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-desiases span {
+            font-weight: 400;
+            color: #000; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-parasites {
+          font-family: Georgia;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 110%;
+          letter-spacing: 0.9px;
+          color: #000; }
+          .modal-box .modal-list .modal .pets-info .pets-char .pets-list-item .pet-parasites span {
+            font-weight: 400;
+            color: #000; }
     .modal-box .modal-list .modal .close-button {
       font-size: 30px;
       position: fixed;
@@ -338,8 +415,76 @@ header {
 
   .modal-box .modal-list .modal {
     display: flex;
-    flex-direction: column;
-    width: 46.875em; }
+    flex-direction: row;
+    width: 39.375em; }
+    .modal-box .modal-list .modal .pet-photo {
+      width: 21.875em;
+      height: 21.875em; }
+    .modal-box .modal-list .modal .pets-info .modal-pet-name {
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: 2.1px; }
+    .modal-box .modal-list .modal .pets-info .pet-breed {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 115%; }
+    .modal-box .modal-list .modal .pets-info .pet-discription {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+      letter-spacing: 0.78px; }
+    .modal-box .modal-list .modal .pets-info .pets-char .pet-age {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-age span {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+    .modal-box .modal-list .modal .pets-info .pets-char .pet-inoculations {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-inoculations span {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+    .modal-box .modal-list .modal .pets-info .pets-char .pet-desiases {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-desiases span {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+    .modal-box .modal-list .modal .pets-info .pets-char .pet-parasites {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-parasites span {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
 
   .footer-main {
     flex-direction: column;
@@ -428,6 +573,87 @@ header {
       flex-wrap: wrap;
       flex-direction: column;
       margin: 0px 0px 0px 0px; }
+
+  .modal-box .modal-list .modal {
+    display: flex;
+    flex-direction: row;
+    width: 15em;
+    height: 21.3125em; }
+    .modal-box .modal-list .modal .pet-photo {
+      display: none; }
+    .modal-box .modal-list .modal .pets-info {
+      display: flex;
+      align-items: center;
+      margin-right: 0px;
+      width: 13.75em;
+      height: 20.0625em; }
+      .modal-box .modal-list .modal .pets-info .modal-pet-name {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 2.1px; }
+      .modal-box .modal-list .modal .pets-info .pet-breed {
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%;
+        letter-spacing: 1.2px; }
+      .modal-box .modal-list .modal .pets-info .pet-discription {
+        text-align: justify;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.78px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-age {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pet-age span {
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%;
+          letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-inoculations {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pet-inoculations span {
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%;
+          letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-desiases {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pet-desiases span {
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%;
+          letter-spacing: 0.9px; }
+      .modal-box .modal-list .modal .pets-info .pets-char .pet-parasites {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.9px; }
+        .modal-box .modal-list .modal .pets-info .pets-char .pet-parasites span {
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%;
+          letter-spacing: 0.9px; }
 
   .footer-main {
     flex-direction: column;
