@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let showButtons = document.querySelectorAll('.about-pet')
-    let closeButtons = document.querySelectorAll('.close-button')
-    let overlay = document.querySelector('.overlay')
-    let pageBody = document.querySelector('.main-body')
+    const showButtons = document.querySelectorAll('.about-pet')
+    const closeButtons = document.querySelectorAll('.close-button')
+    const overlay = document.querySelector('.overlay')
+    const pageBody = document.querySelector('.main-body')
     
     showButtons.forEach((showButton) => showButton.addEventListener("click", function (e) {
         e.preventDefault()

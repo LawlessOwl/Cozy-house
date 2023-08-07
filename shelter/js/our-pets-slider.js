@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let previousButton = document.querySelector('.previous-page')
-    let nextPage = document.querySelector('.next-page')
-    let firstPage = document.querySelector('.first-page')
-    let lastPage = document.querySelector('.last-page')
-    let currentPage = document.querySelector('.current-page')
-    let slider = document.querySelector('.pets-list')
+    const previousButton = document.querySelector('.previous-page')
+    const nextPage = document.querySelector('.next-page')
+    const firstPage = document.querySelector('.first-page')
+    const lastPage = document.querySelector('.last-page')
+    const currentPage = document.querySelector('.current-page')
+    const slider = document.querySelector('.pets-list')
     let windowSize = window.innerWidth;
     let offset = 0
     let count = 0

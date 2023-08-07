@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const swiper = document.querySelector('.pets-list');
-    let leftButtons = document.querySelectorAll('.left-arrow-button');
-    let rightButtons = document.querySelectorAll('.right-arrow-button');
+    const leftButtons = document.querySelectorAll('.left-arrow-button');
+    const rightButtons = document.querySelectorAll('.right-arrow-button');
     let offset = 0;
 
     leftButtons.forEach((leftButton) => leftButton.addEventListener('click', function(){
