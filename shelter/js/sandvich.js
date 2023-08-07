@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pageBody = document.querySelector('.main-body')
     const linkList = document.querySelectorAll('a[data-link="nav-item"]')
 
-    sandvichButton.addEventListener('click', function() {
+    sandvichButton.addEventListener('click', () => {
         if(sandvichCheck.checked) {
             pageBody.classList.remove('lock-scroll')
         } else {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
     
-    linkList.forEach((link) => link.addEventListener('click', function() {
+    linkList.forEach((link) => link.addEventListener('click', () => {
         pageBody.classList.remove('lock-scroll')
         sandvichCheck.checked = false
     }))

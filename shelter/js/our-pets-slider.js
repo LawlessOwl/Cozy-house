@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (windowSize <= 768) {
         enabled(nextPage)
         enabled(lastPage)
-        nextPage.addEventListener('click', function() {
+        nextPage.addEventListener('click', () => {
             if (windowSize <= 580) {
                 offset += -270
                 count++
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             } 
         })
-        lastPage.addEventListener('click', function() {
+        lastPage.addEventListener('click', () => {
             if (windowSize <= 580) {
                 offset += -810
                 count = 3
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 disabled(lastPage)
             }
         })
-        previousButton.addEventListener('click', function() {
+        previousButton.addEventListener('click', () => {
             if (windowSize <= 580) {
                 offset += 270
                 count--
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             } 
         })
-        firstPage.addEventListener('click', function() {
+        firstPage.addEventListener('click', () => {
             if (windowSize <= 580) {
                 offset += 810
                 count = 0
